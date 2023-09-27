@@ -1,5 +1,9 @@
-const  Saludar = () => {
-  return "¡Hola, Parcel! (Desde módulo)"
+function Saludar() {
+  return "¡Hola, Parcel! Desde el módulo la suma es:"
 }
 
-export { Saludar }
+const Sumar = () => {
+  return 1 + 1;
+}
+
+export { Saludar, Sumar }

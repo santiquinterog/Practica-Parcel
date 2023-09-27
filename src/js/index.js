@@ -1,9 +1,8 @@
-import axios from "axios";
-import { Saludar } from "./modulo.js";
+import axios from "axios"
 
-console.log(Saludar());
-const API_URL = "https://rickandmortyapi.com/api/character";
+import { Saludar, Sumar } from "./modulo.js";
 
-axios.get(API_URL).then((response) => {
-  console.log(response.data);
-});
+console.log(Saludar(), Sumar());
+
+
+axios.get("https://rickandmortyapi.com/api/character").then((response)=>console.log(response.data.results))
